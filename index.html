@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="manifest" href="manifest.json">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PWA</title>
+</head>
+
+<body>
+    <div class="login">
+        <form id="loginForm" method="post">
+            <label for="">Login</label><br>
+            <input type="text" id="email" placeholder="Email"><br>
+            <label for="">Senha</label><br>
+            <input type="password" id="senha" placeholder="Senha"><br>
+            <button type="submit">Entrar</button>
+            <button id="registrar">Registrar</button><br>
+            <button id="esqueci">Esqueceu a senha?</button>
+        </form>
+    </div>
+
+    <div class="home">
+        <header>
+            <h3><a target="_blank" href="https://www.youtube.com/watch?v=jPMFqS9SKWY&pp=ygUDcHdh">O que é PWA?</a></h3>
+            <h3>|</h3>
+            <h3><a target="_blank" href="https://www.youtube.com/watch?v=Bil163XI1Hk&list=PLmIA3VZysEqQCi5xOJJDb5QIYgHwPhf_D">Mini curso PWA</a></h3>
+        </header>
+        <h1>Site PWA</h1>
+
+        <canvas id="myChart"></canvas>
+    </div>    
+    <script src="script.js"></script>
+</body>
+
+
+</html>
